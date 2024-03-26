@@ -1,0 +1,13 @@
+FROM rpi3_base
+
+ENV DEBIAN_FRONTEND noninteractive
+
+WORKDIR /app
+
+COPY . /app
+
+RUN pip3 install --trusted-host pypi.python.org -r requirements.txt
+
+ENV NAME AQ_receiver
+
+CMD ["python3", "app.py"]

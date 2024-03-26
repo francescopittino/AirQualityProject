@@ -1,0 +1,13 @@
+#Iniziando dal runtime ufficiale 
+FROM balenalib/raspberrypi3-debian:latest
+
+ENV DEBIAN_FRONTEND noninteractive
+
+#Aggiornamento pacchetti e installazione di quelli necessari
+RUN apt-get update -y \
+    && apt-get -y install python3 \
+    python3-pip \
+    pythno3-dev
+
+#Definizione variabile d'ambiente
+ENV RPBASE RPi3_Base
