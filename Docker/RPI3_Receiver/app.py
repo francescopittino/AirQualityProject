@@ -7,7 +7,7 @@ import serial_port_reader
 shutdown = False
 DEVICE_NAME = 'RaspberryPi3Receiver'
 BAUDRATE = 115200
-field_list = ['DHT11_Temperature_Celsius', 'DHT11_Temperature_Fahrenheit', 'DHT11_Humidity', 'DHT11_Feels_Like', 'MQ135', 'PMS_PM1', 'PMS_PM2.5', 'PMS_PM10', 'PMS_N0.3', 'PMS_N0.5', 'PMS_N1.0', 'PMS_N2.5', 'PMS_N5.0', 'PMS_N10']
+field_list = ['DHT11_Temperature_Celsius', 'DHT11_Temperature_Fahrenheit', 'DHT11_Humidity', 'DHT11_Feels_Like', 'MQ135', 'PMS_PM1', 'PMS_PM2.5', 'PMS_PM10', 'PMS_N0.3', 'PMS_N0.5', 'PMS_N1.0', 'PMS_N2.5', 'PMS_N5.0', 'PMS_N10', 'eco2', 'etvoc']
 
 def signal_handler(signal, frame):
 	global shutdown
